@@ -1,0 +1,6 @@
+# Executable files
+*.exe
+# Database files
+*.ibd
+build/
+.vs
