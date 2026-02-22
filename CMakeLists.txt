@@ -14,10 +14,10 @@ file(GLOB_RECURSE STORAGE_SOURCES
 )
 
 # Create storage library
-add_library(storage STATIC ${STORAGE_SOURCES})
+add_library(storage STATIC ${STORAGE_SOURCES} "include/parser/parser.hpp" "include/parser/command.hpp")
 
 # Create test executable for storage engine tests
-add_executable(storage_engine_test "tests/storage_engine_test.cpp")
+add_executable(storage_engine_test "tests/storage_engine_test.cpp" "include/parser/parser.hpp" "include/parser/command.hpp")
 target_link_libraries(storage_engine_test PRIVATE storage)
 
 # MSVC Specific settings

@@ -133,6 +133,7 @@ bool insert_internal_no_split(Page& page, const Key& key, uint32_t child) {
     return true;
 }
 
+
 SplitInternalResult split_internal_page(TableHandle& th, Page& page) {
     auto* ph = get_header(page);
     assert(ph->page_level == PageLevel::INTERNAL);
