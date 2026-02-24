@@ -1,10 +1,10 @@
-# MiniatureDB (storage engine)
+# db-engine (storage engine)
 
 
 ## Under Development!
 
 
-MiniatureDB is a simple DB implementation in C++ inspired from SQLite and InnoDB.
+MiniatureDB is a simple storage engien implementation of a database in C++ inspired from SQLite and InnoDB.
 
 Summary of what this implementation resembles
 - SQLite (storage layer): an embedded, single-file storage engine.
